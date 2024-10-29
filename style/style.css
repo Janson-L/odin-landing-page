@@ -6,7 +6,9 @@ body {
 
 .header,
 .footer,
-.hero {
+.hero,
+.info {
+    display: flex;
     flex: 1 1 auto;
     padding: 16px 128px;
 }
@@ -14,7 +16,6 @@ body {
 .header,
 .footer,
 .hero {
-    display: flex;
     background-color: #1F2937;
 }
 
@@ -47,6 +48,7 @@ a {
 }
 
 .footer {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -82,4 +84,41 @@ button{
 .hero-title{
     font-size: 48px;
     font-weight: 900;
+}
+
+.info-title{
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.info{
+    gap: 32px;
+}
+
+.card, .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text{
+    color:#1F2937;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-image{
+    border: 2px solid #3882F6;
+    border-radius: 8px;
+}
+
+.card-image, .card-text{
+    max-width: 200px;
+}
+
+.cards-container{
+    display: flex;
+    gap:18px;
 }
