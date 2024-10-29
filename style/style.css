@@ -13,6 +13,11 @@ body {
     padding: 16px 128px;
 }
 
+.hero,
+.info {
+    height: 400px;
+}
+
 .header,
 .footer,
 .hero {
@@ -59,6 +64,11 @@ a {
     gap: 64px;
 }
 
+.hero-image-container{
+    display: flex;
+    align-items: center;
+}
+
 .hero-image {
     max-width: 500px;
 }
@@ -92,15 +102,17 @@ button{
     font-weight: 900;
 }
 
-.info{
-    gap: 32px;
-}
-
 .card, .info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.info{
+    margin-top: 32px;
+    gap: 32px;
+    justify-content:flex-start;
 }
 
 .card-text{
@@ -115,7 +127,7 @@ button{
 }
 
 .card-image, .card-text{
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .cards-container{
