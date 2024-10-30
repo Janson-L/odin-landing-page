@@ -8,7 +8,8 @@ body {
 .footer,
 .hero,
 .info,
-.quote {
+.quote,
+.cta {
     display: flex;
     flex: 1 1 auto;
     padding: 16px 128px;
@@ -16,7 +17,8 @@ body {
 
 .hero,
 .info,
-.quote {
+.quote,
+.cta {
     height: 400px;
 }
 
@@ -32,7 +34,8 @@ a {
 
 .secondary,
 .footer,
-.hero-subtext {
+.hero-subtext,
+.cta-text {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -85,7 +88,7 @@ a {
 button{
     background-color: #3882F6;
     padding: 4px 8px;
-    max-width: 128px;
+    width: 128px;
     cursor: pointer;
     border-radius: 8px;
     border: none;
@@ -158,4 +161,27 @@ button{
     width: 600px;
     font-weight:bold;
     text-align: right;
+}
+
+.cta, .cta-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-container{
+    background-color: #3882F6;
+    justify-content: space-between;
+    padding: 32px 128px;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.cta-container button{
+    border: 1px solid #F9FAF8;
+}
+
+.cta-header{
+    font-size: 24px;
+    font-weight: 700;
 }
